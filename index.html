@@ -3,17 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherDash</title>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>WeatherDash</h1>
-        <div class="weather-info">
-            <h2>Current Weather</h2>
-            <div id="weather-data"></div>
+    <header class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 ml-auto">Weather Dashboard</span>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-left">Search for a city</h2>
+                <form id="search-form" class="mt-4 mb-4">
+                    <div class="form-group">
+                        <input type="text" id="city-input" class="form-control" placeholder="Enter city name">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Search</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <!-- Weather content -->
+                <div id="current-weather" class="weather-card mb-4">
+                    <h2 class="text-center">Current Weather</h2>
+                    <!-- Display current weather info here -->
+                </div>
+
+                <div id="forecast" class="weather-card">
+                    <h2 class="text-center">5-Day Forecast</h2>
+                    <!-- Display 5-day forecast info here -->
+                </div>
+
+                <div id="search-history" class="mt-4">
+                    <h2 class="text-center">Search History</h2>
+                    <ul id="history-list" class="list-group">
+                        <!-- Display search history here -->
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
