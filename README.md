@@ -11,7 +11,7 @@ Welcome to WeatherWhiz, your go-to destination for accurate and reliable weather
 
 ## Preview
 
-![WeatherWhiz Preview](images/Screenshot (432).png)
+![WeatherWhiz Preview](images/imageofwebsite.png)
 
 ## Technologies Used
 
