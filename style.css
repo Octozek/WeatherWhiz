@@ -51,6 +51,11 @@
 #forecast {
     background-color: #f0f0f0; 
     padding: 10px; 
+    margin-top: 20px; /* Add margin to separate from the previous content */
+}
+
+#forecast-cards .col-md-2 {
+    margin-bottom: 20px; /* Add space between each forecast card */
 }
 
 /* Additional style for a light gray background */

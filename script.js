@@ -53,22 +53,24 @@ $(document).ready(function(){
                     success: function(forecastData) {
                         // Update the HTML content for the forecast cards
                         var forecastCards = '';
-                        for (var i = 0; i < 5; i++) {
-                            var forecastDate = new Date(forecastData.list[i].dt_txt);
-                            var formattedForecastDate = forecastDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-                            var forecastEmoji = getWeatherEmoji(forecastData.list[i].weather[0].main);
-                            forecastCards += `
-                                <div class="col-md-2">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">${formattedForecastDate} ${forecastEmoji}</h5>
-                                            <p class="card-text">Temperature: ${forecastData.list[i].main.temp}°C</p>
-                                            <p class="card-text">Wind Speed: ${forecastData.list[i].wind.speed} m/s</p>
-                                            <p class="card-text">Humidity: ${forecastData.list[i].main.humidity}%</p>
+                        for (var i = 0; i < forecastData.list.length; i++) {
+                            if (i % 8 === 0) {
+                                var forecastDate = new Date(forecastData.list[i].dt_txt);
+                                var formattedForecastDate = forecastDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+                                var forecastEmoji = getWeatherEmoji(forecastData.list[i].weather[0].main);
+                                forecastCards += `
+                                    <div class="col-md-2">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">${formattedForecastDate} ${forecastEmoji}</h5>
+                                                <p class="card-text">Temperature: ${forecastData.list[i].main.temp}°C</p>
+                                                <p class="card-text">Wind Speed: ${forecastData.list[i].wind.speed} m/s</p>
+                                                <p class="card-text">Humidity: ${forecastData.list[i].main.humidity}%</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            `;
+                                `;
+                            }
                         }
                         $('#forecast-cards').html(forecastCards);
                     },
