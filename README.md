@@ -11,7 +11,7 @@ Welcome to WeatherWhiz, your go-to destination for accurate and reliable weather
 
 ## Preview
 
-![WeatherWhiz Preview](assets/imageofwebsite.jpg)
+![WeatherWhiz Preview](assets/images/imageofwebsite.jpg)
 
 link to site (https://github.com/Octozek).
 ## Technologies Used
