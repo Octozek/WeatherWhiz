@@ -12,6 +12,8 @@ Welcome to WeatherWhiz, your go-to destination for accurate and reliable weather
 ## Preview
 
 ![WeatherWhiz Preview](assets/imageofwebsite.jpg)
+
+link to site (https://github.com/Octozek).
 ## Technologies Used
 
 - HTML
@@ -23,8 +25,6 @@ Welcome to WeatherWhiz, your go-to destination for accurate and reliable weather
 
 To start using WeatherWhiz, simply follow these steps:
 
-go to this sight [my sight] or
-
 1. Clone this repository to your local machine.
 2. Sign up for a free API key from [OpenWeatherMap](https://openweathermap.org/api) if you haven't already.
 3. Replace `'YOUR_API_KEY'` in the `script.js` file with your actual API key.
@@ -32,7 +32,7 @@ go to this sight [my sight] or
 
 ## Credits
 
-- This Weather Dashboard project is created and maintained by [Ezekiel Owens].
+- This Weather Dashboard project is created and maintained by [Ezekiel Owens](https://github.com/Octozek).
 
 - Weather data is powered by the [OpenWeatherMap API](https://openweathermap.org/api), ensuring reliable and accurate weather information. The OpenWeatherMap API offers a comprehensive set of weather data, including current weather, forecasts, and historical data, making it a valuable resource for weather-related applications.
 
@@ -41,3 +41,7 @@ go to this sight [my sight] or
 ---
 
 Explore the world with WeatherWhiz and stay informed about the weather conditions wherever you go!
+
+## License
+
+N/A
